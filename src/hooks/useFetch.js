@@ -14,10 +14,6 @@ const useFetch = (pageNo, url, queryTerm = '') => {
       } else {
         output = await MoviesService.getMovies(pageNo, movieUrl);
       }
-      console.log('pageNo: ', 1);
-      console.log('url : ', url);
-      console.log('queryTerm : ', queryTerm);
-
       setData(output?.data?.results);
     }
     getMovies();
